@@ -14,6 +14,7 @@ Everyone is requested that whenever you fork and clone this repository, you crea
 - [@Abhay](https://github.com/Rexezz)
 - [@Aevam](https://github.com/Aevam)
 - [@Sairaj](https://github.com/SairajBarve)
+- [@Uday](https://github.com/im-usb)
 
 
 
