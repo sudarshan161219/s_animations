@@ -1,0 +1,66 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* To change the properties of underline animations: 
+    play with height, width and bottom property,
+    you can also change time and transition effects by changing the transition property
+*/
+
+/* For first text */
+
+h1.text-one {
+    font-size: 2.3rem;
+    color: rgb(21, 21, 51);
+    cursor: pointer;
+}
+
+h1.text-one::before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 4px;
+    bottom: 79%;
+    width: 12%;
+    background: rgb(21, 21, 51);
+    border-radius: 9999px;
+    transform: scaleX(0);
+    transition: all 0.4s ease;
+}
+
+h1.text-one:hover::before {
+    transform: scaleX(1);
+}
+
+/* For second text */
+h1.text-two {
+    font-size: 2.3rem;
+    color: rgb(21, 21, 51);
+    cursor: pointer;
+}
+
+h1.text-two::before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 4px;
+    bottom: 47%;
+    width: 9%;
+    background: rgb(21, 21, 51);
+    border-radius: 9999px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.4s ease;
+}
+
+h1.text-two:hover::before {
+    transform: scaleX(1);
+}
