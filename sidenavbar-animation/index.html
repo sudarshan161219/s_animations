@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/89bf2e29f9.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>sidenav-bar-animation</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav class="nav">
+          <div class="nav-logo-container">
+            <img class="logo" src="./assets/ALogo.png" alt="Logo" />
+            <strong>Logo</strong>
+          </div>
+          <div class="menu-btn-container">
+    <div class="menu">
+        <i class="fa fa-thin fa-bars"></i>
+        <i class="fa fa-thin fa-xmark"></i>
+    </div>
+          </div>
+        </nav>
+      </header>
+      <div class="sidenav-container">
+        <!-- logo-profile-container -->
+        <div class="logo-profile-container">
+          <div class="logo-container">
+            <img class="logo" src="./assets/ALogo.png" alt="logo" />
+            <strong>LOGO</strong>
+          </div>
+
+          <div class="profile-container">
+            <img
+              class="profile-img"
+              src="https://api.dicebear.com/6.x/adventurer/svg?seed=Cuddles"
+              alt="avatar"
+            />
+            <strong>Jhon doe</strong>
+            <i class="fa fa-light fa-arrow-right"></i>
+          </div>
+        </div>
+
+        <!-- Searchbar container -->
+        <div class="search-container">
+          <div class="input-container">
+            <i
+              class="fa fa-light fa-magnifying-glass"
+              style="color: #000000"
+            ></i>
+            <input class="input" type="text" placeholder="search" />
+          </div>
+        </div>
+
+        <!-- list-items -->
+        <div class="list-items-container">
+          <ul>
+            <li><i class="fa fa-thin fa-table-cells-large"></i>dashboard</li>
+            <li><i class="fa fa-thin fa-cube"></i> products</li>
+            <li><i class="fa fa-thin fa-users"></i>clients</li>
+            <li><i class="fa fa-thin fa-message"></i>messages</li>
+            <li><i class="fa fa-thin fa-database"></i>database</li>
+            <li><i class="fa fa-thin fa-bell"></i>notifications</li>
+            <li><i class="fa fa-thin fa-gear"></i>settings</li>
+          </ul>
+        </div>
+
+        <div class="footer-container">
+          <ul>
+            <li class="help">
+              <i class="fa fa-thin fa-circle-exclamation"></i>help
+            </li>
+            <li class="logout">
+              <i class="fa fa-thin fa-arrow-right-from-bracket"></i>logout
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

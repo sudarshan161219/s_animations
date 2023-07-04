@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 0.1em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+  height: 100vh;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  padding: 1rem;
+  position: relative;
+}
+
+.sidenav-container {
+  position: fixed;
+  background-color: #262a31;
+  width: 300px;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  transform: translateX(-500px);
+  transition: all 0.3s;
+}
+
+.logo-profile-container {
+  display: grid;
+  gap: 2rem;
+  border-bottom: #f6f6f1 1px solid;
+  padding: 1rem;
+}
+
+.nav-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-logo-container > strong,
+.fa-bars,
+.fa-xmark {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-container > strong {
+  color: #f6f6f1;
+  font-size: 1.3rem;
+  letter-spacing: 1.1px;
+}
+
+.profile-container > strong {
+  color: #f6f6f1;
+  font-size: 0.9rem;
+  letter-spacing: 1.1px;
+}
+
+.fa-arrow-right {
+  color: #f6f6f1;
+  cursor: pointer;
+}
+
+.fa-arrow-right:hover {
+  opacity: 0.5;
+  transition: all 0.2s;
+}
+
+.logo {
+  width: 35px;
+}
+
+.profile-img {
+  width: 30px;
+  border-radius: 100%;
+  border: 1px solid #f6f6f1;
+}
+
+/* search */
+.search-container {
+  padding: 1rem;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  background-color: #f6f6f1;
+  padding: 0.3rem;
+  border-radius: 8px;
+  position: relative;
+}
+
+.input-container > input {
+  background-color: #f6f6f1;
+  border: none;
+  outline: #f6f6f1;
+  font-family: inherit;
+  font-size: 1rem;
+  transform: translateX(3px);
+  transition: all 0.2s;
+}
+
+.fa-magnifying-glass {
+  position: absolute;
+  left: -10px;
+  z-index: -1;
+  transition: all 0.2s;
+  opacity: 0;
+}
+
+.list-items-container {
+  border-bottom: 1px solid #f6f6f1;
+}
+
+.list-items-container,
+.footer-container {
+  padding: 1rem 1rem 1rem 0;
+}
+
+.list-items-container > ul > li {
+  color: #f6f6f1;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.footer-container > ul {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.footer-container > ul > li {
+  /* color: #f6f6f1; */
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.logout {
+  color: tomato;
+}
+
+.help {
+  color: lightblue;
+}
+
+ul > li:hover {
+  -webkit-tap-highlight-color: transparent;
+  transform: translateX(10px);
+  transition: all 0.3s;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.menu-btn-container {
+  display: grid;
+  height: 25px;
+  overflow: hidden;
+}
+
+.menu {
+  display: grid;
+  transition: all 0.3s;
+  padding: 0.1rem;
+  /* transform: translateY(10px); */
+}
+
+.fa-bars {
+}
